@@ -83,7 +83,7 @@
   let tono = document.getElementById("tono");
 
   let canciones = [];
-  window.onload = getData();
+  window.addEventListener("load", getData);
 
   async function getData() {
     await axios.get(url).then((data) => {
